@@ -4,9 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta property="og:title" content="Aws Terraform Ansible Webapp" />
-<meta property="og:description" content="This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
-We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites." />
+        <meta property="og:title" content="Building a fully automated web-app using AWS, Terraform and Ansible" />
+<meta property="og:description" content="We would be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. Terraformis one of the best tool available to provision infratructure on your preferred cloud, but once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansibleto help deploy various software components to these virtual machines." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://anees009.github.io/post/aws-terraform-ansible-webapp/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-06-05T22:02:26&#43;00:00" />
@@ -14,14 +13,13 @@ We&rsquo;ll start with creating a new site with a very basic template. Then we&r
 
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Aws Terraform Ansible Webapp"/>
-<meta name="twitter:description" content="This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
-We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites."/>
+<meta name="twitter:title" content="Building a fully automated web-app using AWS, Terraform and Ansible"/>
+<meta name="twitter:description" content="We would be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. Terraformis one of the best tool available to provision infratructure on your preferred cloud, but once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansibleto help deploy various software components to these virtual machines."/>
 <meta name="twitter:site" content="@sssssbutton"/>
 
         
         <title>
-  Aws Terraform Ansible Webapp | Anees Patel
+  Building a fully automated web-app using AWS, Terraform and Ansible | Anees Patel
 </title>
 
         <link rel="icon" type="image/png" href='https://anees009.github.io/images/favicon-16x16.png' sizes="16x16">
@@ -50,9 +48,7 @@ We&rsquo;ll start with creating a new site with a very basic template. Then we&r
 <meta name="copyright" content="All rights reserved." />
 
 
-<meta name="description" content="This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.
-">
+<meta name="description" content="We would be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. Terraformis one of the best tool available to provision infratructure on your preferred cloud, but once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansibleto help deploy various software components to these virtual machines.">
 
 
     
@@ -96,17 +92,17 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
         <div class="main">
             
 <div class="container mt-4 post">
-    <h1>Aws Terraform Ansible Webapp</h1>
+    <h1>Building a fully automated web-app using AWS, Terraform and Ansible</h1>
     <div class="mb-3">
     <small>
         <strong>By Anees Patel</strong>
         | <i class="far fa-calendar-alt"></i>&nbsp;Jun 5, 2021&nbsp;
-        | <i class="fa fa-tags" title="Tags" aria-hidden="true"></i> <a href='https://anees009.github.io/tags/terraform/'>terraform</a>, <a href='https://anees009.github.io/tags/ansible/'>ansible</a>
+        | <i class="fa fa-tags" title="Tags" aria-hidden="true"></i> <a href='https://anees009.github.io/tags/terraform/'>terraform</a>, <a href='https://anees009.github.io/tags/ansible/'>ansible</a>, <a href='https://anees009.github.io/tags/aws/'>aws</a>
     </small>
 </div>
 
     <div class="share-icons d-flex justify-content-center d-print-none">
-        <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&text=Aws%20Terraform%20Ansible%20Webapp&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
+        <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&text=Building%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -116,7 +112,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
     <div class="fa-inverse text-center"><small>Tweet</small></div>
 </a>
 
-<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&t=Aws%20Terraform%20Ansible%20Webapp" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
+<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&t=Building%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -126,7 +122,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
     <div class="fa-inverse text-center"><small>Share</small></div>
 </a>
 
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&title=Aws%20Terraform%20Ansible%20Webapp&source=mattbutton.com" class="p-2" title="Share on LinkedIn" target="_blank" rel="nofollow">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&title=Building%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible&source=mattbutton.com" class="p-2" title="Share on LinkedIn" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -148,13 +144,13 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
     </div>
 
     <div class="mt-4 mb-4 main-content">
-        <p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
-<p>We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p>
-<p>In this tutorial, commands that you enter will start with the &ldquo;$&rdquo; prompt. The output will follow. Lines that start with &ldquo;#&rdquo; are comments that I&rsquo;ve added to explain a point. When I show updates to a file, the &ldquo;:wq&rdquo; on the last line means to save the file.</p>
-<p>Here&rsquo;s an example:</p>
+        <p>We would be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application.
+<!-- raw HTML omitted -->Terraform<!-- raw HTML omitted --> is one of the best tool available to provision infratructure on your preferred cloud, but once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like <!-- raw HTML omitted -->Ansible<!-- raw HTML omitted --> to help deploy various software components to these virtual machines.</p>
+<!-- raw HTML omitted -->
+
 
         <div class="share-icons d-flex justify-content-center d-print-none">
-            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&text=Aws%20Terraform%20Ansible%20Webapp&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&text=Building%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -164,7 +160,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
     <div class="fa-inverse text-center"><small>Tweet</small></div>
 </a>
 
-<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&t=Aws%20Terraform%20Ansible%20Webapp" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
+<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&t=Building%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -174,7 +170,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
     <div class="fa-inverse text-center"><small>Share</small></div>
 </a>
 
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&title=Aws%20Terraform%20Ansible%20Webapp&source=mattbutton.com" class="p-2" title="Share on LinkedIn" target="_blank" rel="nofollow">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&title=Building%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible&source=mattbutton.com" class="p-2" title="Share on LinkedIn" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
@@ -211,7 +207,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
     <h2 class="mt-4">Recent Posts</h2>
     <nav class="nav flex-column">
         
-        <a href="https://anees009.github.io/post/aws-terraform-ansible-webapp/" class="nav-link">Aws Terraform Ansible Webapp</a>
+        <a href="https://anees009.github.io/post/aws-terraform-ansible-webapp/" class="nav-link">Building a fully automated web-app using AWS, Terraform and Ansible</a>
         
     </nav>
     
@@ -230,6 +226,11 @@ We&amp;rsquo;ll start with creating a new site with a very basic template. Then 
         
         <a href='https://anees009.github.io/tags/ansible/' class="nav-link">
         ansible
+        <span class="badge badge-pill badge-secondary">1</span>
+        </a>
+        
+        <a href='https://anees009.github.io/tags/aws/' class="nav-link">
+        aws
         <span class="badge badge-pill badge-secondary">1</span>
         </a>
         

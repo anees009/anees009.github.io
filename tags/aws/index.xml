@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software Development on Anees Patel</title>
-    <link>https://anees009.github.io/categories/software-development/</link>
-    <description>Recent content in Software Development on Anees Patel</description>
+    <title>AWS on Anees Patel</title>
+    <link>https://anees009.github.io/tags/aws/</link>
+    <description>Recent content in AWS on Anees Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/categories/software-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a fully automated web-app using AWS, Terraform and Ansible</title>
       <link>https://anees009.github.io/post/aws-terraform-ansible-webapp/</link>
