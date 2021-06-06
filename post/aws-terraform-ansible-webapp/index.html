@@ -221,15 +221,28 @@
 
 </code></pre></div><h3 id="terraform-files">Terraform files</h3>
 <p>This module discusses all terraform configurations in details</p>
-<h4 id="define-aws-as-the-cloud-provider">Define AWS as the cloud provider</h4>
+<h4 id="define-mechanism-to-accept-aws-credentials">Define mechanism to accept AWS Credentials</h4>
+<p>We will need to declare AWS creds on the command line</p>
+<pre><code># export aws_access_key = &quot;&lt;AWS ACCESS KEY&gt;&quot;`
+# export aws_secret_key = &quot;&lt;AWS SECRET KEY&gt;&quot;
+</code></pre><p>Terraform will then accept the above credentials as variables to be used to provision infrastructure on AWS</p>
+<h4 id="variablestf">variables.tf</h4>
+<div class="highlight"><pre class="chroma"><code class="language-hcl" data-lang="hcl"><span class="k">variable</span> <span class="s2">&#34;aws_access_key&#34;</span> {
+<span class="n">  type</span>    <span class="o">=</span> <span class="k">string</span>
+}
+
+<span class="k">variable</span> <span class="s2">&#34;aws_secret_key&#34;</span> {
+<span class="n">  type</span>    <span class="o">=</span> <span class="k">string</span>
+}
+</code></pre></div><h4 id="define-aws-as-the-cloud-provider">Define AWS as the cloud provider</h4>
 <p>As Terraform is a cloud-agnositic tool that can be used for provising infrastructure on all major clouds, it is needed to define the cloud provider as each provider offers a different set of resources that can be managed, terraform provides plug-ins to each of these cloud vendors, hence we need to define the provider as AWS and issue the command <code>terraform init</code> to download the plug-ins needed for AWS.</p>
 <h5 id="maintf">main.tf</h5>
-<pre><code>1. provider &quot;aws&quot; {
-2.   access_key = var.aws_access_key
-3.   secret_key = var.aws_secret_key
-4.   region     = &quot;us-east-2&quot;
-5. }
-</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-hcl" data-lang="hcl"><span class="m">1</span><span class="p">.</span> <span class="k">provider</span> <span class="s2">&#34;aws&#34;</span> {
+<span class="n">2.   access_key</span> <span class="o">=</span> <span class="k">var</span><span class="p">.</span><span class="k">aws_access_key</span>
+<span class="n">3.   secret_key</span> <span class="o">=</span> <span class="k">var</span><span class="p">.</span><span class="k">aws_secret_key</span>
+<span class="n">4.   region</span>     <span class="o">=</span> <span class="s2">&#34;us-east-2&#34;</span>
+<span class="m">5</span><span class="p">.</span> }
+</code></pre></div>
 
         <div class="share-icons d-flex justify-content-center d-print-none">
             <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&text=Deploy%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
