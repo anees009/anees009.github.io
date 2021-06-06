@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Anees Patel</title>
-    <link>https://anees009.github.io//categories/</link>
+    <link>https://anees009.github.io/categories/</link>
     <description>Recent content in Categories on Anees Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io//categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Development</title>
-      <link>https://anees009.github.io//categories/software-development/</link>
+      <link>https://anees009.github.io/categories/software-development/</link>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
       
-      <guid>https://anees009.github.io//categories/software-development/</guid>
+      <guid>https://anees009.github.io/categories/software-development/</guid>
       <description></description>
     </item>
     

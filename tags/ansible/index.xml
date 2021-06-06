@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible on Anees Patel</title>
-    <link>https://anees009.github.io//tags/ansible/</link>
+    <link>https://anees009.github.io/tags/ansible/</link>
     <description>Recent content in Ansible on Anees Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io//tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aws Terraform Ansible Webapp</title>
-      <link>https://anees009.github.io//post/aws-terraform-ansible-webapp/</link>
+      <link>https://anees009.github.io/post/aws-terraform-ansible-webapp/</link>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
       
-      <guid>https://anees009.github.io//post/aws-terraform-ansible-webapp/</guid>
+      <guid>https://anees009.github.io/post/aws-terraform-ansible-webapp/</guid>
       <description>&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;</description>
     </item>

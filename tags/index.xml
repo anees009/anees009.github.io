@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Anees Patel</title>
-    <link>https://anees009.github.io//tags/</link>
+    <link>https://anees009.github.io/tags/</link>
     <description>Recent content in Tags on Anees Patel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io//tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible</title>
-      <link>https://anees009.github.io//tags/ansible/</link>
+      <link>https://anees009.github.io/tags/ansible/</link>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
       
-      <guid>https://anees009.github.io//tags/ansible/</guid>
+      <guid>https://anees009.github.io/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Terraform</title>
-      <link>https://anees009.github.io//tags/terraform/</link>
+      <link>https://anees009.github.io/tags/terraform/</link>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
       
-      <guid>https://anees009.github.io//tags/terraform/</guid>
+      <guid>https://anees009.github.io/tags/terraform/</guid>
       <description></description>
     </item>
     
