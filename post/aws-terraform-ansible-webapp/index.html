@@ -227,13 +227,13 @@
 # export aws_secret_key = &quot;&lt;AWS SECRET KEY&gt;&quot;
 </code></pre><p>Terraform will then accept the above credentials as variables to be used to provision infrastructure on AWS</p>
 <h4 id="variablestf">variables.tf</h4>
-<div class="highlight"><pre class="chroma"><code class="language-hcl" data-lang="hcl"><span class="k">variable</span> <span class="s2">&#34;aws_access_key&#34;</span> {
-<span class="n">  type</span>    <span class="o">=</span> <span class="k">string</span>
-}
-
-<span class="k">variable</span> <span class="s2">&#34;aws_secret_key&#34;</span> {
-<span class="n">  type</span>    <span class="o">=</span> <span class="k">string</span>
-}
+<div class="highlight"><pre class="chroma"><code class="language-hcl" data-lang="hcl"><span class="m">1</span><span class="p">.</span> <span class="k">variable</span> <span class="s2">&#34;aws_access_key&#34;</span> {
+<span class="n">2.   type</span>    <span class="o">=</span> <span class="k">string</span>
+<span class="m">3</span><span class="p">.</span> }
+<span class="m">4</span><span class="p">.</span> 
+<span class="m">5</span><span class="p">.</span> <span class="k">variable</span> <span class="s2">&#34;aws_secret_key&#34;</span> {
+<span class="n">6.   type</span>    <span class="o">=</span> <span class="k">string</span>
+<span class="m">7</span><span class="p">.</span> }
 </code></pre></div><h4 id="define-aws-as-the-cloud-provider">Define AWS as the cloud provider</h4>
 <p>As Terraform is a cloud-agnositic tool that can be used for provising infrastructure on all major clouds, it is needed to define the cloud provider as each provider offers a different set of resources that can be managed, terraform provides plug-ins to each of these cloud vendors, hence we need to define the provider as AWS and issue the command <code>terraform init</code> to download the plug-ins needed for AWS.</p>
 <h5 id="maintf">main.tf</h5>
