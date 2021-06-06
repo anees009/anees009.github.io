@@ -178,7 +178,28 @@
 </ol>
 <h2 id="deployment">Deployment:</h2>
 <p>The source code can be found at this <a href="https://github.com/anees009/aws-terraform-ansible-webapp">github-repo</a> for your reference.</p>
-<p>The sample <a href="https://github.com/anees009/aws-terraform-ansible-webapp/blob/main/ansible/roles/app_server/files/server.py">python-app</a> is a simple HTTP server which will keep listining at port 8000, It will serve the requests and respond with the IP of the host.</p>
+<h3 id="project-structure">Project Structure</h3>
+<pre><code>$tree
+.
+├── ansible
+│   ├── roles
+│   │   ├── app_server
+│   │   │   ├── files
+│   │   │   │   └── server.py
+│   │   │   └── tasks
+│   │   │       └── main.yml
+│   │   └── web_server
+│   │       └── tasks
+│   │           └── main.yml
+│   └── site.yml
+├── inventory.tmpl
+├── main.tf
+├── nginx.tmpl
+├── outputs.tf
+├── variables.tf
+└── vpc.tf
+
+</code></pre><p>The sample <a href="https://github.com/anees009/aws-terraform-ansible-webapp/blob/main/ansible/roles/app_server/files/server.py">python-app</a> is a simple HTTP server which will keep listining at port 8000, It will serve the requests and respond with the IP of the host.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">http.server</span>
 <span class="kn">import</span> <span class="nn">socketserver</span>
 <span class="kn">import</span> <span class="nn">socket</span>
@@ -198,9 +219,17 @@
 <span class="n">httpd</span> <span class="o">=</span> <span class="n">socketserver</span><span class="o">.</span><span class="n">TCPServer</span><span class="p">((</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="mi">8000</span><span class="p">),</span> <span class="n">Handler</span><span class="p">)</span>
 <span class="n">httpd</span><span class="o">.</span><span class="n">serve_forever</span><span class="p">()</span>
 
-</code></pre></div><h3 id="terraform-files">Terraform files:</h3>
+</code></pre></div><h3 id="terraform-files">Terraform files</h3>
+<p>This module discusses all terraform configurations in details</p>
 <h4 id="define-aws-as-the-cloud-provider">Define AWS as the cloud provider</h4>
-
+<p>As Terraform is a cloud-agnositic tool that can be used for provising infrastructure on all major clouds, it is needed to define the cloud provider as each provider offers a different set of resources that can be managed, terraform provides plug-ins to each of these cloud vendors, hence we need to define the provider as AWS and issue the command <code>terraform init</code> to download the plug-ins needed for AWS.</p>
+<h5 id="maintf">main.tf</h5>
+<pre><code>1. provider &quot;aws&quot; {
+2.   access_key = var.aws_access_key
+3.   secret_key = var.aws_secret_key
+4.   region     = &quot;us-east-2&quot;
+5. }
+</code></pre>
 
         <div class="share-icons d-flex justify-content-center d-print-none">
             <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fanees009.github.io%2fpost%2faws-terraform-ansible-webapp%2f&text=Deploy%20a%20fully%20automated%20web-app%20using%20AWS%2c%20Terraform%20and%20Ansible&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
