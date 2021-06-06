@@ -9,12 +9,12 @@
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/categories/software-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building a fully automated web-app using AWS, Terraform and Ansible</title>
+      <title>Deploy a fully automated web-app using AWS, Terraform and Ansible</title>
       <link>https://anees009.github.io/post/aws-terraform-ansible-webapp/</link>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
       
       <guid>https://anees009.github.io/post/aws-terraform-ansible-webapp/</guid>
-      <description>We would be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. Terraform is one of the best tool available to provision infratructure on your preferred cloud, but once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansibleto help deploy various software components to these virtual machines.</description>
+      <description>We would be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. Terraform is one of the best tool available to provision infratructure on your preferred cloud, but once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansible to help deploy various software components to these virtual machines.</description>
     </item>
     
   </channel>
