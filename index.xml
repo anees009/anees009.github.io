@@ -9,6 +9,15 @@
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>https://anees009.github.io/about/</link>
+      <pubDate>Thu, 10 Jun 2021 03:17:14 +0000</pubDate>
+      
+      <guid>https://anees009.github.io/about/</guid>
+      <description>Hi my name is Anees</description>
+    </item>
+    
+    <item>
       <title>Deploy a fully automated web-app using AWS, Terraform and Ansible</title>
       <link>https://anees009.github.io/post/aws-terraform-ansible-webapp/</link>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
