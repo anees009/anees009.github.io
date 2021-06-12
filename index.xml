@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anees Patel</title>
@@ -7,7 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jun 2021 22:02:26 +0000</lastBuildDate><atom:link href="https://anees009.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Jun 2021 03:17:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://anees009.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>About</title>
       <link>https://anees009.github.io/about/</link>
@@ -15,7 +19,7 @@
       
       <guid>https://anees009.github.io/about/</guid>
       <description>Hi I&amp;rsquo;m Anees Patel, I am an Open-source enthusiast Engineer, with focus on highly scalable Infrastructure.
-I have in the past worked with Red Hat and Dell EMC
+As CNCF has become the de facto community for clound native technologies, In this blog I will be exploring the various CNCF projects&amp;hellip;
 I am reachable via email aneesrpatel@gmail.com, I like to respond to my emails, feel free to reach out to me.
 More details on my LinkedIn Page</description>
     </item>
@@ -26,8 +30,7 @@ More details on my LinkedIn Page</description>
       <pubDate>Sat, 05 Jun 2021 22:02:26 +0000</pubDate>
       
       <guid>https://anees009.github.io/post/aws-terraform-ansible-webapp/</guid>
-      <description>We will be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. The whole process can be divided into two tasks,
- Task 1: Provision the AWS infrastructure, Terraform is one of the best tool available to provision infratructure on your preferred cloud, Task 2: Deploy the software components, Once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansible to help deploy various software components to these virtual machines.</description>
+      <description>We will be using Infrastructure as Code (IaC) principle to fully automate the provisioning and deployment of all the components to successfully run a python application. The whole process can be divided into two tasks, * Task 1: Provision the AWS infrastructure, Terraform is one of the best tool available to provision infratructure on your preferred cloud, * Task 2: Deploy the software components, Once the infrastructure is put it place, In order to deploy highly scalable applications we would need a configuration management tool like Ansible to help deploy various software components to these virtual machines.</description>
     </item>
     
   </channel>
